@@ -1,0 +1,21 @@
+nav, main, footer {
+    padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+    nav, main, footer {
+        padding-left: 0;
+    }
+}
+nav{
+    height: 135px;
+}
+
+.brand-logo{
+    margin-top: 25px;
+}
+
+
+
+
+
