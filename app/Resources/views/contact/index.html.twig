@@ -1,4 +1,26 @@
 {% extends 'base.html.twig' %}
+{% block nav %}<nav class="top-nav">
+    <a id="top_title" class="brand-logo center" href="#">Contact</a>
+    <ul class="left">
+        <li><a data-activates="slide-out" class="button-collapse" href="#"><i class="material-icons">menu</i></a></li>
+    </ul>
+</nav>
+{% endblock %}
 {% block body %}
-    HAHAHAHAHAHAH
+
+    <div class="row">
+        <h3 class="header">
+            <u>Formulaire de contact</u>
+        </h3>
+        <br>
+        <div class="card">
+            <div class="card-content">
+                {{form_start(form)}}
+                {{form_widget(form)}}
+                {{form_end(form)}}
+
+
+            </div>
+        </div>
+    </div>
 {% endblock %}

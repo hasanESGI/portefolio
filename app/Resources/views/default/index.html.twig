@@ -1,4 +1,36 @@
 {% extends 'base.html.twig' %}
 
+
+{% block nav %}<nav class="top-nav">
+    <a id="top_title" class="brand-logo center" href="#">Accueil</a>
+    <ul class="left">
+        <li><a data-activates="slide-out" class="button-collapse" href="#"><i class="material-icons">menu</i></a></li>
+    </ul>
+</nav>
+{% endblock %}
 {% block body %}
+
+    <div class="row">
+        <h3 class="header">
+            <u>À propos</u>
+        </h3>
+        <br>
+        <div class="card">
+            <div class="card-content">
+                <div style="text-align: center;">
+
+                    <img src="{{ asset('images/hassan.jpg') }}" class="circle responsive-img" style="width:283px;height: 300px">
+                </div>
+                <p style="text-align: justify;">
+                    Ideo urbs venerabilis post superbas efferatarum gentium cervices oppressas latasque leges fundamenta libertatis et retinacula sempiterna velut frugi parens et prudens et dives Caesaribus tamquam liberis suis regenda patrimonii iura permisit.
+
+                    Alii summum decus in carruchis solito altioribus et ambitioso vestium cultu ponentes sudant sub ponderibus lacernarum, quas in collis insertas cingulis ipsis adnectunt nimia subtegminum tenuitate perflabiles, expandentes eas crebris agitationibus maximeque sinistra, ut longiores fimbriae tunicaeque perspicue luceant varietate liciorum effigiatae in species animalium multiformes.
+
+                    Nec vox accusatoris ulla licet subditicii in his malorum quaerebatur acervis ut saltem specie tenus crimina praescriptis legum committerentur, quod aliquotiens fecere principes saevi: sed quicquid Caesaris implacabilitati sedisset, id velut fas iusque perpensum confestim urgebatur impleri.
+
+                    Eminuit autem inter humilia supergressa iam impotentia fines mediocrium delictorum nefanda Clematii cuiusdam Alexandrini nobilis mors repentina; cuius socrus cum misceri sibi generum, flagrans eius amore, non im
+                </p>
+            </div>
+        </div>
+    </div>
 {% endblock %}
