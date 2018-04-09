@@ -14,9 +14,9 @@
 <body>
 
 <header>
-    <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper">
+
+        <nav class="top-nav">
+            <div class="container">
                 <a id="top_title" class="brand-logo center" href="#">Accueil</a>
                 <ul class="left">
                     <li><a data-activates="slide-out" class="button-collapse" href="#"><i class="material-icons">menu</i></a></li>
@@ -25,29 +25,65 @@
 
             </div>
         </nav>
-    </div>
+    <ul id="slide-out" class="side-nav fixed">
+        <li>
+            <div class="user-view" style="width: 300px;height:135px">
+                <div class="background">
+                    <a href="#"><img src="images/logo.jpg" alt="logo" class="img-responsive" width="300" height="135"></a>
+                </div>
+            </div>
+        </li>
+        <li><a href="#!" class="waves-effect"><i class="material-icons">home</i>Accueil</a></li>
+        <li><a href="#!" class="waves-effect"><i class="material-icons">check_box</i>Projets</a></li>
+        <li><a class="waves-effect" href="#!"><i class="material-icons">file_download</i>Curriculum Vitae </a></li>
+    </ul>
 </header>
 
-<ul id="slide-out" class="side-nav fixed">
-    <li>
-        <div class="user-view">
-            <div class="background">
-                <img src="images/image.jpg">
+
+
+<main>
+    <div class="container">
+        <div class="col s12">
+
+            <div class="row">
+                <h3 class="header">
+                    <u>À propos</u>
+                </h3>
+                <br>
+                <div class="card">
+                    <div class="card-content">
+                        <div style="text-align: center;">
+
+                            <img src="images/hassan.jpg" alt="hassan.jpg" class="circle responsive-img" style="width:283px;height: 300px">
+                        </div>
+                        <p style="text-align: justify;">
+                            Ideo urbs venerabilis post superbas efferatarum gentium cervices oppressas latasque leges fundamenta libertatis et retinacula sempiterna velut frugi parens et prudens et dives Caesaribus tamquam liberis suis regenda patrimonii iura permisit.
+
+                            Alii summum decus in carruchis solito altioribus et ambitioso vestium cultu ponentes sudant sub ponderibus lacernarum, quas in collis insertas cingulis ipsis adnectunt nimia subtegminum tenuitate perflabiles, expandentes eas crebris agitationibus maximeque sinistra, ut longiores fimbriae tunicaeque perspicue luceant varietate liciorum effigiatae in species animalium multiformes.
+
+                            Nec vox accusatoris ulla licet subditicii in his malorum quaerebatur acervis ut saltem specie tenus crimina praescriptis legum committerentur, quod aliquotiens fecere principes saevi: sed quicquid Caesaris implacabilitati sedisset, id velut fas iusque perpensum confestim urgebatur impleri.
+
+                            Eminuit autem inter humilia supergressa iam impotentia fines mediocrium delictorum nefanda Clematii cuiusdam Alexandrini nobilis mors repentina; cuius socrus cum misceri sibi generum, flagrans eius amore, non im
+                        </p>
+                    </div>
+                </div>
             </div>
-            <a href="#!user"><img class="circle responsive-img" srcset="images/hassan.jpg"></a>
-            <a href="#!name"><span class="white-text name">AKAR Hassan</span></a>
         </div>
-    </li>
-    <li><a href="#!" class="waves-effect"><i class="material-icons">home</i>Accueil</a></li>
-    <li><a href="#!" class="waves-effect"><i class="material-icons">check_box</i>Projets</a></li>
-    <li><a class="waves-effect" href="#!"><i class="material-icons">file_download</i>Curriculum Vitae </a></li>
-</ul>
+    </div>
+</main>
+<footer style="height: 135px;background-color: #5eb5e0">
+    <div class="container">
+
+    </div>
 
 
 
+
+</footer>
 
 
 {% block body %}{% endblock %}
+
 {% block javascripts %}
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script>
